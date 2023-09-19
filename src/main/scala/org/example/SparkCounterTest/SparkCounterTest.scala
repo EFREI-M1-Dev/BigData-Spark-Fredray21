@@ -1,6 +1,4 @@
 package org.example.SparkCounterTest
-
-import org.apache.hadoop.thirdparty.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -28,7 +26,7 @@ object SparkCounterTest extends App {
       .getOrCreate()
 
     // Chargez le fichier CSV en tant que DataFrame
-    val csvFilePath = "C:\\dev\\EFREI\\spark-hello-world-example\\src\\main\\scala\\cities.csv"
+    val csvFilePath = "C:\\dev\\EFREI\\Spark-TPbase-Fredray21\\src\\main\\scala\\cities.csv"
     val df: DataFrame = spark.read.option("header", "true").csv(csvFilePath)
 
     // Comptez le nombre de villes TOTAL dans la colonne 'label'
