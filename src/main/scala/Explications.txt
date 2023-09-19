@@ -1,0 +1,12 @@
+Ce Projet initialise une session Spark et charge les données d'un CSV dans un dataframe spark.
+
+Le CSV est un fichier de données sur les villes de France. (voir le fichier cities.csv)
+
+il fait plusieurs opérations :
+- Avec du SQL il compte le nombre de villes par région.
+- Il compte le nombre de villes total.
+- Il compte le nombre de villes avec des Noms distincts.
+- Il fait une moyenne globale de toutes les latitudes et longitudes.
+
+Il écrit les résultats dans la console et dans un fichier texte. (voir le fichier output.txt)
+Pour information, chaque ligne du code est commentée pour plus de clarté.
