@@ -26,7 +26,7 @@ object SparkCounterTest extends App {
       .getOrCreate()
 
     // Chargez le fichier CSV en tant que DataFrame
-    val csvFilePath = "C:\\dev\\EFREI\\Spark-TPbase-Fredray21\\src\\main\\scala\\cities.csv"
+    val csvFilePath = "C:\\dev\\EFREI\\BigData-Spark-Fredray21\\src\\main\\scala\\cities.csv"
     val df: DataFrame = spark.read.option("header", "true").csv(csvFilePath)
 
     // Comptez le nombre de villes TOTAL dans la colonne 'label'
